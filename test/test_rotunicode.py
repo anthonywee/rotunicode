@@ -1,13 +1,15 @@
 # coding: utf-8
 
-from __future__ import unicode_literals
+from __future__ import absolute_import, unicode_literals
+
 import codecs
+import platform
 
 # pylint:disable=import-error,no-name-in-module
 from genty import genty, genty_dataset
 # pylint:enable=import-error,no-name-in-module
-import platform
 import six
+
 from rotunicode import RotUnicode
 from test.base_test_case import skipIf, TestCase
 

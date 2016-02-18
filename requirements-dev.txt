@@ -1,6 +1,10 @@
 -rrequirements.txt
 coveralls
 genty>=1.0.0
+
+# Temporary fix for genty.
+ordereddict
+
 pep8
 pylint
 tox

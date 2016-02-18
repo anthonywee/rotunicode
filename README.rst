@@ -210,7 +210,7 @@ Run all tests using:
 The tox tests include code style checks via pep8 and pylint.
 
 The tox tests are configured to run on Python 2.6, 2.7, 3.3, 3.4, 3.5, and
-PyPy 2.6.
+PyPy (our CI is configured to run PyPy tests on PyPy 4.0).
 
 
 Copyright and License
@@ -218,7 +218,7 @@ Copyright and License
 
 ::
 
- Copyright 2015 Box, Inc. All rights reserved.
+ Copyright 2016 Box, Inc. All rights reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
