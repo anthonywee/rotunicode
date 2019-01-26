@@ -46,7 +46,7 @@ class RotUnicode(codecs.Codec):
     )
 
     @classmethod
-    def encode(cls, string, errors='strict'):
+    def encode(cls, string, errors='strict'):  # pylint:disable=arguments-differ
         """Return the encoded version of a string.
 
         :param string:
@@ -72,7 +72,7 @@ class RotUnicode(codecs.Codec):
         return encoded, len(string)
 
     @classmethod
-    def decode(cls, string, errors='strict'):
+    def decode(cls, string, errors='strict'):  # pylint:disable=arguments-differ
         """Return the decoded version of a string.
 
         :param string:
