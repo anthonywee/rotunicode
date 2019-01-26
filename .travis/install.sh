@@ -40,19 +40,19 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
             pyenv global 3.6.0
             ;;
         pypy)
-            pyenv install pypy-2.6.0
-            pyenv global pypy-2.6.0
+            pyenv install "pypy${PYPY_VERSION}"
+            pyenv global "pypy${PYPY_VERSION}"
             ;;
     esac
     pyenv rehash
     python -m pip install -U --user virtualenv
 else
-    # temporary pyenv installation to get pypy-2.6 before container infra upgrade
+    # temporary pyenv installation to get pypy before container infra upgrade
     if [[ "${TOX_ENV}" == "pypy" ]]; then
         git clone https://github.com/yyuu/pyenv.git $PWD/.pyenv
         eval "$(pyenv init -)"
-        pyenv install pypy-2.6.0
-        pyenv global pypy-2.6.0
+        pyenv install "pypy${PYPY_VERSION}"
+        pyenv global "pypy${PYPY_VERSION}"
     fi
     pip install -U virtualenv
 fi
